@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUIMain">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="14" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="15" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="20" y="20" width="1554" height="421"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="6ab83" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Arial" size="14" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value="Hovedside for NT estimering"/>
+        </properties>
+      </component>
+      <hspacer id="9d060">
+        <constraints>
+          <grid row="0" column="6" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="5c432" class="javax.swing.JButton" binding="cmdExit">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Avslutt"/>
+        </properties>
+      </component>
+      <component id="e22cd" class="javax.swing.JButton" binding="cmdGetData">
+        <constraints>
+          <grid row="4" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Hent data fra historian"/>
+        </properties>
+      </component>
+      <component id="32dd" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Utviklet av Per-Olav Hansen"/>
+        </properties>
+      </component>
+      <component id="d5675" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Versjon 2.0"/>
+        </properties>
+      </component>
+      <component id="62ced" class="javax.swing.JLabel" binding="lblIcon">
+        <constraints>
+          <grid row="0" column="0" row-span="12" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="98f50" class="javax.swing.JProgressBar" binding="progressBarWekaRules">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <scrollpane id="a75d8" binding="scrollPanel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="7" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="46acb" class="javax.swing.JTextArea" binding="txtInfoPane">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <hspacer id="a25ee">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="4eee1" class="javax.swing.JButton" binding="cmdCancelDBConnect">
+        <constraints>
+          <grid row="4" column="3" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+      <component id="4fee9" class="javax.swing.JProgressBar" binding="progressBarDBConnect">
+        <constraints>
+          <grid row="4" column="4" row-span="2" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="cc486" class="javax.swing.JButton" binding="cmdGetProsessValue">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Hent prosessverdier"/>
+        </properties>
+      </component>
+      <component id="ba9c9" class="javax.swing.JButton" binding="cmdRunRandomForest">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Kjør Random Forest"/>
+        </properties>
+      </component>
+      <component id="89d23" class="javax.swing.JButton" binding="cmdStopRandomForest">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Stop"/>
+        </properties>
+      </component>
+      <component id="c323c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Tidsintervall på estimering:"/>
+        </properties>
+      </component>
+      <component id="9f0ac" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Innstillinger"/>
+        </properties>
+      </component>
+      <component id="9103d" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sekunder"/>
+        </properties>
+      </component>
+      <component id="fc207" class="javax.swing.JTextField" binding="txtTidsintervallEstimering">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="10"/>
+        </properties>
+      </component>
+      <component id="d1859" class="javax.swing.JTextField" binding="txtTidsintervallNyttTre">
+        <constraints>
+          <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="24"/>
+        </properties>
+      </component>
+      <component id="4bf75" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Ny læring av tre etter:"/>
+        </properties>
+      </component>
+      <component id="f1c0f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Døgn"/>
+        </properties>
+      </component>
+      <component id="a0b1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+        </properties>
+      </component>
+      <component id="e042e" class="javax.swing.JButton" binding="cmdClearInfoPanel">
+        <constraints>
+          <grid row="13" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Tøm skjerm for info"/>
+        </properties>
+      </component>
+      <component id="5de6f" class="javax.swing.JButton" binding="browseTagButton" default-binding="true">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Browse tag"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
